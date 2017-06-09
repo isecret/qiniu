@@ -1,0 +1,144 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+    line-height: 1.42857143;
+    font-family: tahoma,"microsoft yahei","\5FAE\8F6F\96C5\9ED1"!important;
+    user-select: none;
+	color: #333;
+	background-image: url(../images/bg.jpg);
+	background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+input,img{vertical-align:middle;}
+.body-bg{
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: -webkit-box;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+}
+.box{
+	width: 260px;
+	border: 1px solid #999;
+	padding: 15px 20px;
+	text-align: center;
+	position: relative;
+	border-radius: 4px;
+}
+.box-bg{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top:0 ;
+	left: 0;
+	background: #FFF;
+	opacity: .8;
+	z-index: -1;
+}
+.box-decorate{
+	position: absolute;
+	top: 2px;
+	left: 5px;
+}
+.decorate-btn{
+	display: inline-block;
+	height: 12px;
+	width: 12px;
+	background: #000;
+	border-radius: 50%;
+	border: 1px solid #CCC;
+	transition: all .3s;
+	cursor: pointer;
+}
+.decorate-btn-red{
+	background: rgb(255,84,77);
+}
+.decorate-btn-yellow{
+	background: rgb(236,191,65);
+}
+.decorate-btn-green{
+	background: rgb(140,240,79);
+}
+.decorate-btn-false:hover{
+	background: #CCC;
+}
+.box-file-preview{
+	display: none;
+}
+.box-file-preview-file{
+	width: 120px;
+	height: 120px;
+}
+.box-file-preview-file-name{
+	font-size: 14px;
+}
+.box-title{
+	font-size: 28px;
+	font-weight: bold;
+	border-bottom: 1px solid #AAA;
+}
+.box-items{
+	width: 100%;
+	margin: 5px 0;
+}
+.box-title-small{
+	margin: 10px 0 5px;
+	font-size: 16px;
+}
+.box-txt{
+	font-size: 14px;
+}
+.box-input{
+	outline: none;
+	background: rgba(0,0,0,0);
+	border: 1px solid #777;
+	padding: 2px;
+	border-radius: 4px;
+	width: 80px;
+}
+.box-input-full{
+	outline: none;
+	background: rgba(0,0,0,0);
+	border: 1px solid #777;
+	padding: 2px;
+	border-radius: 4px;
+	width: 98%;
+}
+.box-btn{
+	color: #FFF;
+	background: #3582f8;
+	border-radius: 4px;
+	padding: 5px 0;
+	margin: 10px 0;
+	cursor: pointer;
+	transition: all .3s;
+}
+.box-btn:hover{
+	opacity: .8;
+}
+.popup-bg{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background: rgba(0,0,0,.7);
+	display: -webkit-box;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+    z-index: 1;
+}
+footer{
+	color: #777;
+	font-size: 12px;
+}
+
+
+

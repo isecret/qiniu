@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>云外链 - Secret</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="shortcut icon" type="image/ico" href="https://blog.isecret.vip/favicon.ico">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+<div class="body-bg">
+	<div class="box">
+		<div class="box-bg"></div>
+		<div class="box-decorate">
+			<div class="decorate-btn decorate-btn-red decorate-btn-false"></div>
+			<div class="decorate-btn decorate-btn-yellow decorate-btn-false"></div>
+			<div class="decorate-btn decorate-btn-green decorate-btn-false"></div>
+		</div>
+		<div class="box-title">云外链</div>
+		<div class="box-file-preview">
+			<img class="box-file-preview-file" src="images/file.png">
+			<div class="box-file-preview-file-name">未知文件</div>
+		</div>
+		<form enctype="multipart/form-data" id="uploadForm">
+			<input name="upload-file" type="file" style="display: none;">
+			<div class="box-btn select-file">选择文件</div>
+			<div class="box-title-small">自定义文件名：</div>
+			<div class="box-items">
+				<span class="box-txt">https://static.isecret.vip/</span>
+				<input class="box-input" type="text" name="key" placeholder="数字或字母">
+			</div>
+			<div class="box-btn checkBtn">上传</div>
+			<footer>若发现侵权资源，请联系root@isecret.vip删除</footer>
+	</div>
+	<!-- 遮罩层 -->
+	<div class="popup-bg" style="display: none;">
+		<!-- 验证码 -->
+		<div class="box checkBox" style="display: none;">
+			<div class="box-bg"></div>
+			<div class="box-decorate">
+				<div class="decorate-btn decorate-btn-red decorate-btn-ture"></div>
+				<div class="decorate-btn decorate-btn-yellow decorate-btn-false"></div>
+				<div class="decorate-btn decorate-btn-green decorate-btn-false"></div>
+			</div>
+			<div class="box-title-small">请输入验证码</div>
+			<div class="box-items">
+				<img class="getCode" src="getCode.php">
+				<input class="box-input" type="text" name="checkCode">
+			</div>
+			<div class="box-btn uploadNow">确定</div>
+		</form>
+		</div>
+
+		<!-- 提示层 -->
+		<div class="box box-tips" style="display: none;">
+			<div class="box-bg"></div>
+			<div class="box-decorate">
+				<div class="decorate-btn decorate-btn-red decorate-btn-ture"></div>
+				<div class="decorate-btn decorate-btn-yellow decorate-btn-false"></div>
+				<div class="decorate-btn decorate-btn-green decorate-btn-false"></div>
+			</div>
+			<div class="box-title-small box-tips-title"></div>
+			<div class="box-items">
+				<div class="box-txt box-tips-message"></div>
+			</div>
+		</div>
+
+		<!-- 上传成功 -->
+		<div class="box box-copy" style="display: none;">
+			<div class="box-bg"></div>
+			<div class="box-decorate">
+				<div class="decorate-btn decorate-btn-red decorate-btn-ture"></div>
+				<div class="decorate-btn decorate-btn-yellow decorate-btn-false"></div>
+				<div class="decorate-btn decorate-btn-green decorate-btn-false"></div>
+			</div>
+			<div class="box-title-small">上传成功</div>
+			<div class="box-items">
+				<input class="box-input-full copyUrl-txt" type="text" readonly="readonly">
+				<div class="box-btn copyUrl-btn">复制</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
